@@ -3,6 +3,5 @@
 This web app shows top headlines from different top sources.
 This app was developed using CSS,Bootstrap,angular and news api.
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## How to run this web app
+Download the repository and then open terminal in the folder where you have downloaded the repository.Navigate to ninews repository in your file structure. Run `ng serve` for a dev server.This command will start a dev server and then navigate to `http://localhost:4200/`.
