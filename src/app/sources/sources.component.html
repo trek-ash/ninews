@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="sourceshead">
+   <h2>Our Top News Sources</h2>
+  </div>
+
+  <div id="sourceshere">
+    <div class="sources" [ngClass]="{orange: i%3 === 0,blue: i%3 == 1,green : i%3 == 2 }"  *ngFor="let source of data.sources;index as i">
+      <a routerLink="/sourcenews"><div (click)="sourcenews(source)">
+        {{source.name}}
+      </div></a>
+    </div>
+  </div>
+
+  <div>
+
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="container">
+  <div>
+    <h2>Top Headlines | <small>(from India)</small></h2>
+  </div>
+  <div id="topheadlinesshere">
+    <div *ngFor="let headline of headlines.articles;index as i">
+      <a href="{{headline.url}}" target="_blank">
+        <div class="panel" [ngClass]='{"panel-success": i%3 === 0,"panel-info": i%3 === 1,"panel-warning": i%3 === 2}' >
+
+        <div class="panel-heading">{{headline.title}}<span class="badge" style='float: right;margin-right: -10%'>{{headline.source.name}}</span></div>
+        <div class="panel-body"><p class="publisheddate">{{headline.publishedAt | date: 'medium'}}</p>
+
+          <img src="{{headline.urlToImage}}" alt="{{headline.source.name}}" class="img-responsive" style="margin-left: auto;margin-right: auto">
+
+          <br>{{headline.description}}</div>
+      </div></a>
+    </div>
+  </div>
+</div>

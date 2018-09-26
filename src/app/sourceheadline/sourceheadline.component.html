@@ -1,0 +1,28 @@
+<div class="container header">
+  <div style="float: right"><a routerLink="/sources"><div class="btn btn-primary">Back to Sources List</div></a></div>
+  <h3>{{sourcename}}</h3>
+  <br>
+  <br>
+  <div class="sourceheadlines" *ngFor="let headline of sourceheadlines.articles;index as i">
+
+      <div class="panel" [ngClass]='{"panel-success": i%3 === 0,"panel-info": i%3 === 1,"panel-warning": i%3 === 2}' >
+
+        <div class="panel-heading">
+          <a href="{{headline.url}}" target="_blank">
+            {{headline.title}}<span class="badge" style='float: right;margin-right: -10%'>{{headline.source.name}}</span>
+          </a>
+        </div>
+
+        <div class="panel-body">
+          <p class="publisheddate">
+            {{headline.publishedAt | date: 'medium'}}
+          </p>
+          <div style="text-align: center">
+          <img src="{{headline.urlToImage}}" alt="" class="img-responsive" style="margin-left: auto;margin-right: auto">
+          </div>
+          <br>{{headline.description}}<br><br>
+        </div>
+
+      </div>
+  </div>
+</div>

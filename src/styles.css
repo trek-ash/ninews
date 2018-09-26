@@ -1,1 +1,76 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+  font-family: Montserrat;
+}
+small{
+  color: #ffffff!important;
+}
+a{
+  color: inherit!important;
+}
+.sources{
+  font-size: 1.3em;
+  text-align: center;
+  padding: 20px 10px 20px 10px;
+  border-radius: 12px;
+  display: table;
+  margin-left: 3%;
+  flex-grow: 1;
+  display: inline-block;
+  margin-bottom: 3vh;
+
+  -webkit-transition: transform .3s;
+  -moz-transition: transform .3s;
+  -ms-transition: transform .3s;
+  -o-transition: transform .3s;
+  transition: transform .3s;
+  cursor: pointer;
+}
+.sources:hover{
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: transform .3s;
+  -moz-transition: transform .3s;
+  -ms-transition: transform .3s;
+  -o-transition: transform .3s;
+  transition: transform .3s;
+  color: #000000!important;
+}
+.orange{
+  background-color: #FFA726;
+
+}
+.blue{
+  background-color: #00B0FF;
+
+}
+.green{
+  background-color: #A5D6A7;
+
+}
+#sourceshere{
+  margin-top: 5vh;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.panel-heading{
+  font-size: 1.5em!important;
+  font-weight: 500;
+  padding-right: 10%!important;
+}
+.publisheddate{
+  font-size: .8em!important;
+}
+.panel-body{
+  font-size: 1.3em!important;
+}
+a:hover{
+  text-decoration: none!important;
+}
+.nav{
+  font-size: 1.2em;
+}
